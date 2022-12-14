@@ -41,6 +41,14 @@ header{
     justify-content: space-between;
 }
 
+.icone-menu{
+    height: 40px;
+}
+
+#barras{
+    display: none;
+}
+
 .banner{
     height: 602px;
     background-image: url(../img/banner.png);
@@ -101,4 +109,42 @@ header{
 
 .container{
     max-width: 1200px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width: 1000px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #barras{
+        display: inline-block;
+    }
+
+    .menu{
+        display: none;
+
+        position: absolute;
+        top: 91px;
+        right: 0px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        background-color: #1E1C21;
+        height: 400px;
+    }
+    
+    .menu a{
+        font-size: 20px;
+    }
+    .container-grid{
+        width: 800px;
+    }
+
+
+
 }
