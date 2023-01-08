@@ -51,10 +51,21 @@ header{
 
 .banner{
     height: 602px;
-    background-image: url(../img/banner.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.banner-f1{
+    background-image: url(../img/f1_banner.png);
+}
+
+.banner-cs{
+    background-image: url(../img/cs_banner.png);
+}
+
+.banner-lol{
+    background-image: url(../img/lol_banner.png);
 }
 
 .conteudo-banner h1{
@@ -125,7 +136,6 @@ header{
 
     .menu{
         display: none;
-
         position: absolute;
         top: 91px;
         right: 0px;
@@ -136,6 +146,10 @@ header{
 
         background-color: #1E1C21;
         height: 400px;
+    }
+
+    .menu-ativo{
+        display: flex;
     }
     
     .menu a{
